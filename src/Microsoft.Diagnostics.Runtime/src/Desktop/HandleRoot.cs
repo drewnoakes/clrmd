@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace Microsoft.Diagnostics.Runtime.Desktop
 {
-    internal class HandleRoot : ClrRoot
+    public class HandleRoot : ClrRoot
     {
         private readonly Dictionary<HandleType, string> s_nameByHandleType = Enum.GetValues(typeof(HandleType))
             .Cast<HandleType>()
